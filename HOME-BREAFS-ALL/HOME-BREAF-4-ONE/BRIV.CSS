@@ -1,0 +1,1099 @@
+ /*** Pending to add some details on windows ***/
+
+ @property --glass {
+	syntax: '<angle>';
+	inherits: false;
+	initial-value: 337deg;
+}
+
+* {
+	transform-style: preserve-3d;
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 80vh;
+	
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	--cbz: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	
+}
+
+.to {
+	--frame: #070b32;
+	--bush: #181b38;
+	--dot1: radial-gradient(circle at 50% 50%, var(--bush) 0 0.25vmin, #fff0 calc(0.25vmin + 1px) 100%);
+	--dot2: radial-gradient(circle at 50% 50%, var(--bush) 0 0.5vmin, #fff0 calc(0.5vmin + 1px) 100%);
+	--dot3: radial-gradient(circle at 50% 50%, var(--bush) 0 1.15vmin, #fff0 calc(1.15vmin + 1px) 100%);
+	--glass: 337deg;
+	--luz1: hsl(var(--glass) 60% 50% / 60%);
+	--luz2: hsl(var(--glass) 54% 32%);
+	--luz3: hsl(var(--glass) 54% 25%);
+	transition: --glass 3s;
+	width: 80vmin;
+	height: 100vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** tajj ***/
+
+.tajj {
+	
+	--width: 120;
+	--depth: 20;
+	--height: 20;
+	--hue: 235;
+	--sat: 23%;
+	    height: calc(var(--height) * 1vmin);
+	width: calc(var(--width) * 1vmin);
+	position: absolute;
+	
+	transform: rotateY(-8deg) rotateX(5deg) translateZ(-24vmin);
+}
+
+.tajj .sidee {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	border-radius: 4px;
+}
+
+
+.tajj .sidee:nth-of-type(1) {
+	
+	--sat: 40%;
+    transform: translate3d(-50%, -50%, calc(var(--depth) * 0.5vmin));
+    
+    --sz: 1px;
+    --c1: #444444;
+    --c2: #37187a;
+    --ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+    --draw: var(--c1) 0 calc(var(--sz) * 7.85), #9f4d45 calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+    overflow: hidden;
+    background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+}
+.tajj .sidee:nth-of-type(2) {
+	transform: translate3d(-50%, -50%, calc(var(--depth) * -0.5vmin))
+		rotateY(180deg);
+	background:rgb(255, 238, 0);
+}
+.tajj .sidee:nth-of-type(3) {
+	width: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(90deg)
+		translate3d(0, 0, calc(var(--width) * 0.5vmin));
+	
+		--sz: 1px;
+		--c1: #444444;
+		--c2: #37187a;
+		--ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+		--draw: var(--c1) 0 calc(var(--sz) * 7.85), #b5625a calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+		overflow: hidden;
+		background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+	
+
+
+}
+.tajj .sidee:nth-of-type(4) {
+	width: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(-90deg)
+		translate3d(0, 0, calc(var(--width) * 0.5vmin));
+	background:rgb(230, 238, 0);
+}
+.tajj .sidee:nth-of-type(5) {
+	--sat: 60%;
+	height: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(90deg)
+		translate3d(0, 0, calc(var(--height) * 0.5vmin));
+	background: rgb(242, 255, 0);
+}
+.tajj .sidee:nth-of-type(6) {
+	--sat: 60%;
+	height: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg)
+		translate3d(0, 0, calc(var(--height) * 0.5vmin));
+	background: rgb(50, 45, 39);
+	padding: 0.5px;
+	
+	
+}
+
+
+
+
+
+
+/*** FLuuR ***/
+
+.fluur {
+	--width: 40;
+	--depth: 89;
+	--height: 8;
+	bottom: -2vmin;
+	left: 16vmin;
+	--lines-front: repeating-linear-gradient(90deg, var(--luz1) 0% calc(100% - 0.275vmin), var(--frame) calc(100% - 0.275vmin) 100%);
+	--lines-sidee: repeating-linear-gradient(90deg, var(--luz1) 0% calc(100% - 1.5vmin), var(--frame) calc(100% - 1.5vmin) 100%);
+}
+
+
+
+
+.fluur .sidee:nth-of-type(1) {
+	.fluur .sidee:nth-of-type(1) {
+		background: rgba(0, 34, 155, 0.544);
+		background-size: 1.5% 51%, 19.5% 100%, 15.5% 100%, 19.5% 100%, 100% 100%;
+		background-repeat: no-repeat;
+		background-position: 79.75% 100%, 0 0, 25% 0, 75.4% 0, 0 0;
+	}
+}
+
+.fluur .sidee:nth-of-type(3) {
+	
+    
+	--sz: 1px;
+		--c1: #444444;
+		--c2: #37187a;
+		--ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+		--draw: var(--c1) 0 calc(var(--sz) * 7.85), #bb665e calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+		overflow: hidden;
+		background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+	
+}
+
+
+.fluur .sidee:nth-of-type(1):before{
+	position: absolute;
+	content: "";
+	width: 40%;
+	height: 100%;
+	left: 20%;
+	background:repeating-linear-gradient(180deg, #1f323ec3, transparent), repeating-linear-gradient(90deg, #eee 0 calc(100% - 0.25vmin), var(--frame) calc(100% - 0.25vmin) 100%);
+	background-size: 100% 0.365vmin, 8vmin 100%;
+	
+	animation-direction: reverse;
+}
+.fluur .sidee:nth-of-type(1):after, 
+.fluur .sidee:nth-of-type(3):before, .fluur .sidee:nth-of-type(3):after {
+	position: absolute;
+	content: "";
+	width: 40%;
+	height: 100%;
+	left: 20%;
+	background:repeating-linear-gradient(180deg, #1f323ec3, transparent), repeating-linear-gradient(90deg, #eee 0 calc(100% - 0.25vmin), var(--frame) calc(100% - 0.25vmin) 100%);
+	background-size: 100% 0.365vmin, 8vmin 100%;
+}
+
+.fluur .sidee:nth-of-type(1):after {
+	width: 20%;
+	left: 80.25%;
+	height: 98%;
+	
+
+}
+
+
+/* F 1 */
+.fluur.oone .sidee:nth-of-type(1):before, 
+.fluur.oone .sidee:nth-of-type(1):after {
+	box-shadow: 0vmin 0.65vmin 0.25vmin 0.25vmin rgba(90, 48, 48, 0.4) inset;
+}
+.fluur.oone .sidee:nth-of-type(1):after {
+	box-shadow:12px 12px 12px 12px rgba(163, 75, 75, 0) inset, -7.75vmin 0 0 0 #050024f3;
+	
+}
+
+/*** ROOF ***/
+
+.roof {    
+	--height: 5;
+	--width: 42; 
+	--depth: 100;
+	bottom: 2vmin;
+	left: 16vmin;
+	
+	transform: rotateY(-8deg) rotateX(5deg)  translateZ(-18vmin);
+	
+}
+
+
+.roof.twooo { bottom: 3.2vmin; }		
+
+
+
+
+/*** AIR COOLER ***/
+
+
+
+
+
+.clima-cooler {
+	--height: 4.9;
+	--width: 10;
+	--depth: 52;
+	bottom: 62vmin;
+	left: 25vmin;
+}
+
+.clima-cooler + .clima-cooler {
+	--height: 2.4;
+	--width: 20;
+	--depth: 20;
+	bottom: 61vmin;
+	left: 34vmin;
+	transform: rotateY(-8deg) rotateX(5deg) translateZ(-7vmin);
+}
+
+
+
+.clima-cooler .sidee:nth-of-type(1):before {
+	content: "";
+	width: calc(100% - 1vmin);
+	height: calc(100% - 1vmin);
+	position: absolute;
+	background: repeating-linear-gradient(180deg, #000, #0a0d29 , #434770cc);
+	margin: 0.5vmin;
+	background-size: 100% 25%;
+}
+
+
+
+
+
+
+
+
+
+/*** BLINDS ***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                /*** Pending to add some details on windows ***/
+
+
+.content {
+	--frame: #070b32;
+	--bush: #181b38;
+	--dot1: radial-gradient(circle at 50% 50%, var(--bush) 0 0.25vmin, #fff0 calc(0.25vmin + 1px) 100%);
+	--dot2: radial-gradient(circle at 50% 50%, var(--bush) 0 0.5vmin, #fff0 calc(0.5vmin + 1px) 100%);
+	--dot3: radial-gradient(circle at 50% 50%, var(--bush) 0 1.15vmin, #fff0 calc(1.15vmin + 1px) 100%);
+	--glass: 337deg;
+	--luz1: hsl(var(--glass) 60% 50% / 60%);
+	--luz2: hsl(var(--glass) 54% 32%);
+	--luz3: hsl(var(--glass) 54% 25%);
+	transition: --glass 3s;
+	width: 80vmin;
+	height: 100vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	
+}
+/*** CUBOID ***/
+
+.cuboid {
+	--width: 20;
+	--depth: 20;
+	--height: 20;
+	--hue: 235;
+	--sat: 25%;
+	height: calc(var(--height) * 1vmin);
+	width: calc(var(--width) * 1vmin);
+	position: absolute;
+	transform: rotateY(-8deg) rotateX(5deg) translateZ(-24vmin);
+}
+/*hear*/
+.cuboid .side {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	border-radius: 1px;
+}
+
+
+.cuboid .side:nth-of-type(1) {
+	--sat: 40%;
+	transform: translate3d(-50%, -50%, calc(var(--depth) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 18%);
+	--sz: 1px;
+		--c1: #444444;
+		--c2: #37187a;
+		--ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+		--draw: var(--c1) 0 calc(var(--sz) * 7.85), #c65e54 calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+		overflow: hidden;
+		background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+
+}
+.cuboid .side:nth-of-type(2) {
+	
+	transform: translate3d(-50%, -50%, calc(var(--depth) * -0.5vmin))
+		rotateY(180deg);
+	background: hsl(var(--hue), var(--sat), 35%);
+}
+.cuboid .side:nth-of-type(3) {
+	
+	width: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(90deg)
+		translate3d(0, 0, calc(var(--width) * 0.5vmin));
+	
+	--sz: 1px;
+		--c1: #444444;
+		--c2: #37187a;
+		--ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+		--draw: var(--c1) 0 calc(var(--sz) * 7.85), #bb665e calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+		overflow: hidden;
+		background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+}
+.cuboid .side:nth-of-type(4) {
+	width: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(-90deg)
+		translate3d(0, 0, calc(var(--width) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 40%);
+}
+.cuboid .side:nth-of-type(5) {
+	--sat: 60%;
+	height: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(90deg)
+		translate3d(0, 0, calc(var(--height) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 10%);
+}
+.cuboid .side:nth-of-type(6) {
+	--sat: 60%;
+	height: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg)
+		translate3d(0, 0, calc(var(--height) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 10%);
+}
+
+/*** FLOOR ***/
+
+.floor {
+	--width: 40;
+	--depth: 89;
+	--height: 8;
+	bottom: -5vmin;
+	left: 16vmin;
+	--lines-front: repeating-linear-gradient(90deg, var(--luz1) 0% calc(100% - 0.275vmin), var(--frame) calc(100% - 0.275vmin) 100%);
+	--lines-side: repeating-linear-gradient(90deg, var(--luz1) 0% calc(100% - 1.5vmin), var(--frame) calc(100% - 1.5vmin) 100%);
+}
+
+.floor .side { border: 1px solid var(--frame); }
+
+.floor.two { bottom: 5vmin; }
+
+.floor .side:nth-of-type(1) {
+	background: rgba(252, 75, 149, 0.309);
+	background-size: 2.5% 51%, 19.5% 100%, 19.5% 100%, 19.5% 100%, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 79.75% 100%, 0 0, 25% 0, 75.4% 0, 0 0;
+}
+
+.floor .side:nth-of-type(3) {
+	
+	background:rgba(252, 75, 149, 0.309) ;
+}
+/*** ROOF ***/
+
+.roof {    
+	--height: 3;
+	--width: 42;
+	--depth: 100;
+	bottom: 34.5vmin;
+	left: 16vmin;
+	transform: rotateY(-8deg) rotateX(5deg)  translateZ(-18vmin);
+}
+/*hear*/
+.roof.two { bottom: 13vmin; }
+
+
+/*** WINDOWS ***/
+
+span {
+
+	background-size: cover;
+	opacity: 0.4;
+	background-repeat: no-repeat;
+
+		position: absolute;	
+		top: -10px;
+	width: 20%;
+	height: 100%;
+	left: 20%;
+}
+
+
+/* F 2 */
+.floor.two .side span:before ,
+.floor.five .side span:before {
+	content: "";
+	position: absolute;
+	width: calc(100% + 2px);
+	height: 30%;
+	top: -1px;
+	left: -1px;
+	background: repeating-linear-gradient(180deg, black, #383e70);
+	background-size: 100% 0.35vmin;
+	box-shadow: 0.01vmin 0.75vmin 0.15vmin 0.125vmin rgb(0, 0, 0) inset;
+	animation: movee 6s ;
+	animation-direction: alternate;
+}
+@keyframes movee {
+	0%{height: 49px;}
+	100%{height: 12px;}
+}
+
+
+
+/*** BLINDS ***/
+
+.floor .side:nth-of-type(1):before, .floor .side:nth-of-type(1):after, 
+.floor .side:nth-of-type(3):before, .floor .side:nth-of-type(3):after {
+	position: absolute;
+	content: "";
+	width: 40%;
+	height: 100%;
+	left: 20%;
+	background: repeating-linear-gradient(180deg, #8a8a8a, transparent), repeating-linear-gradient(90deg, #383e70 0 calc(100% - 0.25vmin), var(--frame) calc(100% - 0.25vmin) 100%);
+	background-size: 100% 0.365vmin, 8vmin 100%;
+}
+
+/* F 2 */
+.floor.two .side:nth-of-type(1):before {
+	width: 59.5%;
+	left: 40.75%;
+	box-shadow: 0.2vmin 0.5vmin 0.25vmin 0.25vmin #0006 inset;
+}
+.floor.two .side:nth-of-type(1):after {
+	width: 20%;
+	left: -1px;
+	box-shadow: none;
+	box-shadow: 0vmin 0.65vmin 0.25vmin 0.25vmin #0006 inset;
+	background-color: #3d4176;
+}
+
+
+.floor.two .side:nth-of-type(3):before {
+	left: 0;
+}
+
+.floor.two .side:nth-of-type(3):after {
+	left: 35.25%;
+}
+
+
+
+
+
+
+
+
+
+
+.roof {    
+	--height: 3;
+	--width: 42;
+	--depth: 100;
+	bottom: 34.5vmin;
+	left: 16vmin;
+	transform: rotateY(-8deg) rotateX(5deg)  translateZ(-18vmin);
+}
+
+
+
+
+
+.ttaj {
+	--width: 20;
+	--depth: 20;
+	--height: 20;
+	--hue: 235;
+	--sat: 25%;
+	height: calc(var(--height) * 1vmin);
+	width: calc(var(--width) * 1vmin);
+	position: absolute;
+	transform: rotateY(-8deg) rotateX(5deg) translateZ(-24vmin);
+}
+/*hear*/
+.ttaj .sidei {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	border-radius: 1px;
+}
+
+
+.ttaj .sidei:nth-of-type(1) {
+	--sat: 40%;
+	transform: translate3d(-50%, -50%, calc(var(--depth) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 18%);
+	--sz: 1px;
+		--c1: #444444;
+		--c2: #37187a;
+		--ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+		--draw: var(--c1) 0 calc(var(--sz) * 7.85), #c65e54 calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+		overflow: hidden;
+		background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+
+}
+.ttaj .sidei:nth-of-type(2) {
+	
+	transform: translate3d(-50%, -50%, calc(var(--depth) * -0.5vmin))
+		rotateY(180deg);
+	background: hsl(var(--hue), var(--sat), 35%);
+}
+.ttaj .sidei:nth-of-type(3) {
+	
+	width: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(90deg)
+		translate3d(0, 0, calc(var(--width) * 0.5vmin));
+	
+	--sz: 1px;
+		--c1: #444444;
+		--c2: #37187a;
+		--ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+		--draw: var(--c1) 0 calc(var(--sz) * 7.85), #bb665e calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+		overflow: hidden;
+		background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+}
+.ttaj .sidei:nth-of-type(4) {
+	width: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(-90deg)
+		translate3d(0, 0, calc(var(--width) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 40%);
+}
+.ttaj .sidei:nth-of-type(5) {
+	--sat: 60%;
+	height: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(90deg)
+		translate3d(0, 0, calc(var(--height) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 10%);
+}
+.ttaj .sidei:nth-of-type(6) {
+	--sat: 60%;
+	height: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg)
+		translate3d(0, 0, calc(var(--height) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 10%);
+}
+
+/*** flir ***/
+
+.flir {
+	--width: 40;
+	--depth: 89;
+	--height: 8;
+	bottom: -5vmin;
+	left: 16vmin;
+	--lines-front: repeating-linear-gradient(90deg, var(--luz1) 0% calc(100% - 0.275vmin), var(--frame) calc(100% - 0.275vmin) 100%);
+	--lines-sidei: repeating-linear-gradient(90deg, var(--luz1) 0% calc(100% - 1.5vmin), var(--frame) calc(100% - 1.5vmin) 100%);
+}
+
+.flir .sidei { border: 1px solid var(--frame); }
+
+.flir.two { bottom: 16vmin; }
+
+.flir .sidei:nth-of-type(1) {
+	background: rgba(252, 75, 149, 0.309);
+	background-size: 2.5% 51%, 19.5% 100%, 19.5% 100%, 19.5% 100%, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 79.75% 100%, 0 0, 25% 0, 75.4% 0, 0 0;
+}
+
+.flir .sidei:nth-of-type(3) {
+	
+	background:rgba(252, 75, 149, 0.309) ;
+}
+/*** rif ***/
+
+.rif {    
+	--height: 3;
+	--width: 42;
+	--depth: 100;
+	bottom: 3vmin;
+	left: 16vmin;
+	transform: rotateY(-8deg) rotateX(5deg)  translateZ(-18vmin);
+}
+/*hear*/
+.rif.two { bottom: 24vmin; }
+
+
+/*** WINDOWS ***/
+
+.spann {
+	background-image: url(https://i.pinimg.com/564x/0f/a8/fb/0fa8fbc59f17b9279a22a2e180acd827.jpg);
+	background-size: cover;
+	opacity: 0.4;
+	background-repeat: no-repeat;
+
+		position: absolute;	
+		top: -10px;
+	width: 20%;
+	height: 100%;
+	left: 20%;
+}
+
+
+/* F 2 */
+.flir.two .sidei span:before ,
+.flir.five .sidei span:before {
+	content: "";
+	position: absolute;
+	width: calc(100% + 2px);
+	height: 30%;
+	top: -1px;
+	left: -1px;
+	background: repeating-linear-gradient(180deg, black, #383e70);
+	background-size: 100% 0.35vmin;
+	box-shadow: 0.01vmin 0.75vmin 0.15vmin 0.125vmin rgb(0, 0, 0) inset;
+	animation: movee 6s ;
+	animation-direction: alternate;
+}
+@keyframes movee {
+	0%{height: 49px;}
+	100%{height: 12px;}
+}
+
+
+
+/*** BLINDS ***/
+
+.flir .sidei:nth-of-type(1):before, .flir .sidei:nth-of-type(1):after, 
+.flir .sidei:nth-of-type(3):before, .flir .sidei:nth-of-type(3):after {
+	position: absolute;
+	content: "";
+	width: 40%;
+	height: 100%;
+	left: 20%;
+	background: repeating-linear-gradient(180deg, #8a8a8a, transparent), repeating-linear-gradient(90deg, #383e70 0 calc(100% - 0.25vmin), var(--frame) calc(100% - 0.25vmin) 100%);
+	background-size: 100% 0.365vmin, 8vmin 100%;
+}
+
+/* F 2 */
+.flir.two .sidei:nth-of-type(1):before {
+	width: 59.5%;
+	left: 40.75%;
+	box-shadow: 0.2vmin 0.5vmin 0.25vmin 0.25vmin #0006 inset;
+}
+.flir.two .sidei:nth-of-type(1):after {
+	width: 20%;
+	left: -1px;
+	box-shadow: none;
+	box-shadow: 0vmin 0.65vmin 0.25vmin 0.25vmin #0006 inset;
+	background-color: #3d4176;
+}
+
+
+.flir.two .sidei:nth-of-type(3):before {
+	left: 0;
+}
+
+.flir.two .sidei:nth-of-type(3):after {
+	left: 35.25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+	--frame: #070b32;
+	--bush: #181b38;
+	--dot1: radial-gradient(circle at 50% 50%, var(--bush) 0 0.25vmin, #fff0 calc(0.25vmin + 1px) 100%);
+	--dot2: radial-gradient(circle at 50% 50%, var(--bush) 0 0.5vmin, #fff0 calc(0.5vmin + 1px) 100%);
+	--dot3: radial-gradient(circle at 50% 50%, var(--bush) 0 1.15vmin, #fff0 calc(1.15vmin + 1px) 100%);
+	--glass: 337deg;
+	--luz1: hsl(var(--glass) 60% 50% / 60%);
+	--luz2: hsl(var(--glass) 54% 32%);
+	--luz3: hsl(var(--glass) 54% 25%);
+	transition: --glass 3s;
+	width: 80vmin;
+	height: 100vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	
+}
+/*** CUBOIDi ***/
+
+.cuboidi {
+	--width: 0;
+	--depth: 20;
+	--height: 0;
+	--hue: 235;
+	--sat: 25%;
+	height: calc(var(--height) * 1vmin);
+	width: calc(var(--width) * 1vmin);
+	position: absolute;
+	transform: rotateY(-8deg) rotateX(5deg) translateZ(-24vmin);
+}
+/*hear*/
+.cuboidi .side {
+	position: absolute;
+	top: -280px;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	border-radius: 1px;
+}
+
+
+.cuboidi .side:nth-of-type(1) {
+	--sat: 40%;
+	transform: translate3d(-50%, -50%, calc(var(--depth) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 18%);
+	--sz: 1px;
+		--c1: #444444;
+		--c2: #37187a;
+		--ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+		--draw: var(--c1) 0 calc(var(--sz) * 7.85), #c65e54 calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+		overflow: hidden;
+		background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+
+}
+.cuboidi .side:nth-of-type(2) {
+	
+	transform: translate3d(-50%, -50%, calc(var(--depth) * -0.5vmin))
+		rotateY(180deg);
+	background: hsl(var(--hue), var(--sat), 35%);
+}
+.cuboidi .side:nth-of-type(3) {
+	
+	width: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(90deg)
+		translate3d(0, 0, calc(var(--width) * 0.5vmin));
+	
+	--sz: 1px;
+		--c1: #444444;
+		--c2: #37187a;
+		--ts: 50% / calc(var(--sz) * 24) calc(var(--sz) * 25);
+		--draw: var(--c1) 0 calc(var(--sz) * 7.85), #bb665e calc(calc(var(--sz) * 10.85) + 1px) calc(var(--sz) * 7.5), #fff0 calc(calc(var(--sz) * 13.5) + 1px) 100%;
+		overflow: hidden;
+		background: radial-gradient(circle at 100% 99%, var(--draw)) var(--ts), radial-gradient(circle at 0% 100%, var(--draw)) var(--ts), radial-gradient(circle at 48% 49%, var(--draw)) var(--ts), var(--c1);
+}
+.cuboidi .side:nth-of-type(4) {
+	width: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateY(-90deg)
+		translate3d(0, 0, calc(var(--width) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 40%);
+}
+.cuboidi .side:nth-of-type(5) {
+	--sat: 60%;
+	height: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(90deg)
+		translate3d(0, 0, calc(var(--height) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 10%);
+}
+.cuboidi .side:nth-of-type(6) {
+	--sat: 60%;
+	height: calc(var(--depth) * 1vmin);
+	transform: translate(-50%, -50%) rotateX(-90deg)
+		translate3d(0, 0, calc(var(--height) * 0.5vmin));
+	background: hsl(var(--hue), var(--sat), 10%);
+}
+
+/*** FLOOR ***/
+
+.floor {
+	--width: 40;
+	--depth: 89;
+	--height: 8;
+	bottom: -5vmin;
+	left: 16vmin;
+	--lines-front: repeating-linear-gradient(90deg, var(--luz1) 0% calc(100% - 0.275vmin), var(--frame) calc(100% - 0.275vmin) 100%);
+	--lines-side: repeating-linear-gradient(90deg, var(--luz1) 0% calc(100% - 1.5vmin), var(--frame) calc(100% - 1.5vmin) 100%);
+}
+
+.floor .side { border: 1px solid var(--frame); }
+
+.floor.two { bottom: 5vmin; }
+
+.floor .side:nth-of-type(1) {
+	background: rgba(252, 75, 149, 0.309);
+	background-size: 2.5% 51%, 19.5% 100%, 19.5% 100%, 19.5% 100%, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 79.75% 100%, 0 0, 25% 0, 75.4% 0, 0 0;
+}
+
+.floor .side:nth-of-type(3) {
+	
+	background:rgba(252, 75, 149, 0.309) ;
+}
+/*** ROOF ***/
+
+
+.roof.two { bottom: 13vmin; }
+
+
+/*** WINDOWS ***/
+
+span {
+	
+	background-size: cover;
+	opacity: 0.4;
+	background-repeat: no-repeat;
+
+		position: absolute;	
+		top: -10px;
+	width: 20%;
+	height: 100%;
+	left: 20%;
+}
+
+
+/* F 2 */
+.floor.two .side span:before ,
+.floor.five .side span:before {
+	content: "";
+	position: absolute;
+	width: calc(100% + 2px);
+	height: 30%;
+	top: -1px;
+	left: -1px;
+	background: repeating-linear-gradient(180deg, black, #383e70);
+	background-size: 100% 0.35vmin;
+	box-shadow: 0.01vmin 0.75vmin 0.15vmin 0.125vmin rgb(0, 0, 0) inset;
+	animation: movee 6s ;
+	animation-direction: alternate;
+}
+@keyframes movee {
+	0%{height: 49px;}
+	100%{height: 12px;}
+}
+
+
+
+/*** BLINDS ***/
+
+.floor .side:nth-of-type(1):before, .floor .side:nth-of-type(1):after, 
+.floor .side:nth-of-type(3):before, .floor .side:nth-of-type(3):after {
+	position: absolute;
+	content: "";
+	width: 40%;
+	height: 100%;
+	left: 20%;
+	background: repeating-linear-gradient(180deg, #8a8a8a, transparent), repeating-linear-gradient(90deg, #383e70 0 calc(100% - 0.25vmin), var(--frame) calc(100% - 0.25vmin) 100%);
+	background-size: 100% 0.365vmin, 8vmin 100%;
+}
+
+/* F 2 */
+.floor.two .side:nth-of-type(1):before {
+	width: 59.5%;
+	left: 40.75%;
+	box-shadow: 0.2vmin 0.5vmin 0.25vmin 0.25vmin #0006 inset;
+}
+.floor.two .side:nth-of-type(1):after {
+	width: 20%;
+	left: -1px;
+	box-shadow: none;
+	box-shadow: 0vmin 0.65vmin 0.25vmin 0.25vmin #0006 inset;
+	background-color: #3d4176;
+}
+
+
+.floor.two .side:nth-of-type(3):before {
+	left: 0;
+}
+
+.floor.two .side:nth-of-type(3):after {
+	left: 35.25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.floor.six {
+	bottom: 38vmin;
+  }
+
+
+
+ .roof.six {
+	bottom: 45vmin;
+  }
+
+
+  .floor.sx {
+	bottom: 48vmin;
+  }
+
+
+
+ .roof.sx {
+	bottom: 55vmin;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.floor.six .side span {
+	left: 40.5%;
+	width: 19%;
+	background: #0a0a0a;
+  }
+  
+
+
+
+
+.floor.six .side:nth-of-type(1):before {
+
+
+
+left: -0.1vmin;
+	width: 40%;
+	background:linear-gradient(to right,#808080,#4b4040);
+	background-size: 0.25vmin 100%, 8vmin 100%;
+	height: 100%;
+	background: repeating-linear-gradient(180deg, #8a8a8a, transparent), repeating-linear-gradient(90deg, #383e70 0 calc(100% - 0.25vmin), var(--frame) calc(100% - 0.25vmin) 100%);
+	background-size: 100% 0.365vmin, 8vmin 100%;
+
+  }
+
+  .floor.six .side:nth-of-type(1):after {
+	left: 60%;
+	width: 40%;
+	background:linear-gradient(to right,#808080,#4b4040);
+	background-size: 0.25vmin 100%, 8vmin 100%;
+	height: 100%;
+	background: repeating-linear-gradient(180deg, #8a8a8a, transparent), repeating-linear-gradient(90deg, #383e70 0 calc(100% - 0.25vmin), var(--frame) calc(100% - 0.25vmin) 100%);
+	background-size: 100% 0.365vmin, 8vmin 100%;
+  }
+
+ .floor.six .side:nth-of-type(3):before,
+  .floor.six .side:nth-of-type(3):after {
+	left: -0.1vmin;
+	width: 40%;
+	background:linear-gradient(to right,#808080,#4b4040);
+	background-size: 0.25vmin 100%, 8vmin 100%;
+	height: 100%;
+	background: repeating-linear-gradient(180deg, #8a8a8a, transparent), repeating-linear-gradient(90deg, #383e70 0 calc(100% - 0.25vmin), var(--frame) calc(100% - 0.25vmin) 100%);
+	background-size: 100% 0.365vmin, 8vmin 100%;
+
+  }
+
+
+  .floor.six .side:nth-of-type(3):after {
+	left: 35.25%;
+  }
+
+  
+  .roof.six .cactus {
+	left: 90%;
+	transform: rotateY(60deg) rotate(-1deg);
+	border-radius: 0% 100%;
+	filter: drop-shadow(-2px 1px 0px #434770cc);
+  }
+  
+
+
