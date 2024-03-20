@@ -1,0 +1,410 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+ 
+  .to {
+	position: relative;
+	width: 80vw;
+	height: 99vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 1000px;
+  }
+  .home{
+	position: relative;
+	width: 60%;
+	height: 100%;
+	bottom: 2vmin;                        /*hear up and down th home */
+	transform-style: preserve-3d;
+	transform: rotateX(15deg) rotateY(-15deg);	
+}
+
+body {
+	background-color: #4d70dc;
+}
+
+  .tag {
+	transform-style: preserve-3d;
+	width: 31.5vmin;
+	height: 13vmin;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+  }
+  
+  .tag.two {
+	bottom: 13vmin;
+  }
+  /*twoo*/
+  .tag.three {
+	bottom: 25vmin;
+  }
+  /*three*/
+  .tag.foor {
+	bottom: 37vmin;
+  }
+/**/
+.tag.five {
+	bottom: 50vmin;
+  }
+/**/
+  .tag.six {
+	bottom: 63vmin;
+  }
+/**/
+.tag.saven {
+	bottom: 76vmin;
+  }
+/**/
+
+/**/
+
+/**/
+.tag .side.front {
+	transform: rotateY(0deg) translateZ(16.2vmin);
+  }
+ /*twoo*/
+ .tag .side .wind {
+	width: 19%;
+	height: 100%;
+	border-left: 2.5px solid rgb(74, 74, 74);
+	border-right: 2.5px solid rgb(66, 66, 66);
+  }
+  /*twoo */
+  .tag .side .wind.close,  .tag .side .wind.open{
+	width: 20%;
+	height: 100%;
+	background-image:linear-gradient(to top,rgb(71, 71, 114),rgba(21, 3, 3, 0.894));
+	background-size:cover;
+  }
+ 
+/*twoobb*/
+  .tag .side .wind.open{
+	width: 20%;
+	height: 87%;
+	position: relative;
+	top: -2px;
+	background-image:linear-gradient(to top,rgb(171, 171, 230),rgb(43, 47, 84));
+	background-size:cover;
+  }
+  
+
+  /*twoo*/
+  .tag .side .wind.close{
+	width: 20%;
+	height: 50%;
+	position: relative;
+	top: 9px;
+	background-image:linear-gradient(to top,rgb(148, 148, 207),rgba(52, 78, 106, 0.894));
+	background-size:cover;
+
+  }
+ 
+  /*twoo*/
+  
+ 
+  /*Ktwoo*/
+
+  /*twoo*/
+  
+  .tag .side {
+	
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .tag .side.back {
+	transform: rotateY(180deg) translateZ(16.2vmin);
+	background-image: linear-gradient(to right,rgb(0, 0, 0),black );
+  }
+  
+  .tag .side.left {
+	transform: rotateY(90deg) translateZ(-16.2vmin);
+  }
+  .tag .side.right {
+	transform: rotateY(270deg) translateZ(-16.2vmin);
+  }
+  /* rooooooooooooooof */
+  .tag .side.up {
+	transform: rotateX(90deg) translateZ(17.5vmin) translateX(-3%);
+	width: 35vmin;
+	height: 35vmin;
+	background-color: rgb(9, 30, 42);
+	display: block;
+	transform-style: preserve-3d;
+  }
+  .tag .side.up .face {
+	width: 100%;
+	height: 4vmin;
+	border-top: 5px solid rgb(109, 67, 148);
+	border-bottom: 5px solid rgb(109, 67, 148);
+	transform: rotateX(90deg);
+	background-image:  linear-gradient(to right,rgba(62, 62, 144, 0.547),rgba(65, 65, 147, 0.4));
+	background-size: 25% 100%, 5% 100%;
+  }
+
+  /**/
+  .tag .side.up .face.left {
+	transform: rotateX(90deg) rotateY(90deg) translateZ(17.5vmin) translateX(44%)
+	  translateY(49%);
+  }
+  .tag .side.up .face.right {
+	transform:rotateX(90deg) rotateY(90deg) translateZ(-17.4vmin) translateX(33%) translateY(53%);
+  }
+  .tag .side.up .face.front {
+	transform: rotateX(90deg) translateZ(-24.9vmin) translateY(49%);
+  }
+  .tag .side.up .face.back {
+	transform: rotateX(90deg) translateZ(14vmin) translateY(49%);
+  }
+  
+  
+  
+  /* win */
+ 
+  .tag .side .win {
+	width: 19%;
+	height: 100%;
+	border-left: 2.5px solid rgb(74, 74, 74);
+	border-right: 2.5px solid rgb(66, 66, 66);
+  }
+  
+  .tag .side .win.close,  .tag .side .win.open{
+	width: 20%;
+	height: 100%;
+	position: relative;
+	background-image:linear-gradient(to top,rgb(148, 148, 207),rgba(52, 78, 106, 0.894));
+	background-size:cover;
+  }
+ 
+
+  
+  .tag .side .win.half-open {
+	width: 1222px;
+	background-color:rgb(242, 255, 0);
+	position: relative;
+	animation: lead 5s infinite;
+  }
+  .tag .side .win.half-open::after {
+	content: "";
+	animation: movehalf 5s infinite;
+	width: 100%;
+	position: absolute;
+	background-image: repeating-linear-gradient(rgb(6, 65, 57) 0% 5%,rgb(149, 149, 149) 5% 10%);
+	background-size:cover;
+  }
+  @keyframes lead{
+
+	0%{box-shadow: 1px 15px 12px  8px yellow;}
+	50%{box-shadow: 1px 15px 12px  8px rgba(244, 244, 29, 0.279);}
+	100%{box-shadow: 1px 15px 12px  8px yellow;}
+  }
+
+  @keyframes movehalf{
+
+	0%{height: 50%;}
+	50%{height: 80%; }
+	100%{height: 50%;}
+  }
+  
+/*background*/
+
+
+
+.background{
+	width: 333px;
+	height: 320px;
+	position: relative;
+	top: -2%;
+	left: 90%;
+	
+}
+.sun{
+	
+width: 15%;
+height: 16%;
+background-image:  radial-gradient(circle, rgb(255, 174, 0), rgb(251, 255, 0),rgba(251, 255, 0, 0.525));
+position: absolute;
+top: 30%;
+left: 19%;
+padding: 0;
+border: 1px solid rgba(255, 255, 0, 0.17);
+border-radius:50% ;
+animation:sunn 2s infinite;
+animation-direction: alternate-reverse;
+}
+.shb{
+	
+left: 52px;
+border-radius: 50% 50% 1px 1px;    
+padding: 42px;
+}
+.shbone{
+left: 132px;
+border-radius: 50% 50% 43px 1px;    
+padding: 22px;
+}
+.shbtwo{
+left: 2px;
+border-radius: 50% 50% 1px 22px;    
+}
+#shb{
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+bottom: 0px;
+width: 71px;
+height: 71px;
+position: absolute;
+background:#ffffff;
+animation: shb 5s infinite;
+animation-direction: alternate-reverse;
+}
+.onuue{
+width: 21px;
+height: 41px;
+position: absolute;
+top: 222px;
+left: 7.8px;
+border-radius: 45%;
+border-top:4px solid black;
+animation: wasoone 1s infinite;
+}
+.twouu{ width: 21px;
+height:41px;
+position: absolute;
+top: 222px;
+left: -11px;
+border-radius: 45%;
+border-top:4px solid black;
+animation: wasotwo 1s infinite;
+}
+@keyframes wasoone{
+0%{ 
+	transform: translate(0deg) rotate(0);
+ }
+100%{ 
+	transform: translateX(3px) rotate(-15deg) ;
+}
+}
+@keyframes wasotwo{
+0%{ 
+	transform:rotate(0) translate(0deg);
+ }
+100%{ 
+	transform: translateX(-3px) rotate(15deg);
+}
+}
+
+
+@keyframes shb{
+from{
+	 transform: translateX(-15px)  
+	 rotateX(0deg) rotateY(-15deg);
+	transform-style: preserve-3d; }
+to{
+	 transform: translateX(50px)  
+	 rotateX(0deg) rotateY(-15deg) ;
+	transform-style: preserve-3d;}
+}
+@keyframes sunn{
+from{ box-shadow:0px 0px 50px 30px rgb(255, 255, 0); }
+to{ box-shadow:0px 0px 60px 30px rgb(251, 255, 0);}
+}
+
+
+
+
+/*ard*/
+.ard{
+	background: rgba(135, 173, 7, 0.548);
+	width: 999pc;
+	height:137px;
+	position: absolute;
+	bottom:0px;
+    
+}
+/*tree*/
+
+:root{
+
+	--tree:rgb(60, 255, 0);
+}
+.tree{
+	position: relative;
+	left: 922px;
+	bottom:-18.2%;
+	width: 322px;
+	height: 322px;
+	
+}
+#tree{
+	
+	position: absolute;
+	background: var(--tree);
+	border-bottom:9px solid #000;
+	border-radius: 45%;
+	box-shadow: 1px 14px 25px -2px;
+	animation:tree 1s infinite;
+	animation-direction: alternate-reverse;
+}
+.treetwo{
+	position: absolute;
+	width: 2%;
+    height: 21%;
+    bottom: 14%;
+    left: 78.5%;
+	background-color: rgb(43, 17, 17);
+	
+}
+.treethree{
+	width: 12%;
+	height: 15%;
+	 bottom: 68%;
+	left: 41%; 
+	
+	
+}
+.treefore{
+		width: 18%;
+	height: 21%;
+	 bottom: 51%;
+	left: 45%; 
+}
+.treefive{
+		width: 18%;
+	height: 21%;
+	 bottom: 51%;
+	left: 30%; 
+}
+.treesex{
+		width: 22%;
+	height: 25%;
+	 bottom: 30%;
+	left: 50%; 
+}
+.treesaven{
+	width: 22%;
+	height: 25%;
+	 bottom: 30%;
+	left: 25%; 
+}
+.treeeiat{
+	width: 22%;
+	height: 25%;
+	 bottom: 30%;
+	left: 37%; 
+}
+@keyframes tree{
+
+	from{ transform: translateX(0px);
+		}
+	to{transform: translateX(1px);}
+}

@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+ 
+  .to {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 1000px;
+  }
+  .home{
+	position: relative;
+	width: 60%;
+	height: 100%;
+	bottom: 2vmin;                        /*hear up and down th home */
+	transform-style: preserve-3d;
+	transform: rotateX(15deg) rotateY(-20deg);	
+}
+  
+  .tag {
+	transform-style: preserve-3d;
+	width: 31.5vmin;
+	height: 13vmin;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+  }
+  
+  .tag.two {
+	bottom: 13vmin;
+  }
+  /*twoo*/
+  .tag.three {
+	bottom: 25vmin;
+  }
+  /*three*/
+  .tag.foor {
+	bottom: 37vmin;
+  }
+/**/
+.tag.five {
+	bottom: 50vmin;
+  }
+/**/
+  .tag.six {
+	bottom: 63vmin;
+  }
+/**/
+.tag.saven {
+	bottom: 76vmin;
+  }
+/**/
+
+/**/
+
+/**/
+.tag .side.front {
+	transform: rotateY(0deg) translateZ(16.2vmin);
+  }
+ /*twoo*/
+ .tag .side .wind {
+	width: 19%;
+	height: 100%;
+	border-left: 2.5px solid rgb(74, 74, 74);
+	border-right: 2.5px solid rgb(66, 66, 66);
+  }
+  /*twoo */
+  .tag .side .wind.close,  .tag .side .wind.open{
+	width: 20%;
+	height: 100%;
+	background-image:linear-gradient(to top,rgb(71, 71, 114),rgba(21, 3, 3, 0.894));
+	background-size:cover;
+  }
+ 
+/*twoobb*/
+  .tag .side .wind.open{
+	width: 20%;
+	height: 87%;
+	position: relative;
+	top: -2px;
+	background-image:linear-gradient(to top,rgb(171, 171, 230),rgb(43, 47, 84));
+	background-size:cover;
+  }
+  
+
+  /*twoo*/
+  .tag .side .wind.close{
+	width: 20%;
+	height: 50%;
+	position: relative;
+	top: 9px;
+	background-image:linear-gradient(to top,rgb(148, 148, 207),rgba(52, 78, 106, 0.894));
+	background-size:cover;
+
+  }
+ 
+  /*twoo*/
+  
+ 
+  /*Ktwoo*/
+
+  /*twoo*/
+  
+  .tag .side {
+	
+	transform-style: preserve-3d;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .tag .side.back {
+	transform: rotateY(180deg) translateZ(16.2vmin);
+	background-image: linear-gradient(to right,rgb(0, 0, 0),black );
+  }
+  
+  .tag .side.left {
+	transform: rotateY(90deg) translateZ(-16.2vmin);
+  }
+  .tag .side.right {
+	transform: rotateY(270deg) translateZ(-16.2vmin);
+  }
+  /* rooooooooooooooof */
+  .tag .side.up {
+	transform: rotateX(90deg) translateZ(17.5vmin) translateX(-3%);
+	width: 35vmin;
+	height: 35vmin;
+	background-color: rgb(9, 30, 42);
+	display: block;
+	transform-style: preserve-3d;
+  }
+  .tag .side.up .face {
+	width: 100%;
+	height: 4vmin;
+	border-top: 5px solid rgb(109, 67, 148);
+	border-bottom: 5px solid rgb(109, 67, 148);
+	transform: rotateX(90deg);
+	background-image:  linear-gradient(to right,rgba(62, 62, 144, 0.547),rgba(65, 65, 147, 0.4));
+	background-size: 25% 100%, 5% 100%;
+  }
+
+  /**/
+  .tag .side.up .face.left {
+	transform: rotateX(90deg) rotateY(90deg) translateZ(17.5vmin) translateX(44%)
+	  translateY(49%);
+  }
+  .tag .side.up .face.right {
+	transform:rotateX(90deg) rotateY(90deg) translateZ(-17.4vmin) translateX(33%) translateY(53%);
+  }
+  .tag .side.up .face.front {
+	transform: rotateX(90deg) translateZ(-24.9vmin) translateY(49%);
+  }
+  .tag .side.up .face.back {
+	transform: rotateX(90deg) translateZ(14vmin) translateY(49%);
+  }
+  
+  
+  
+  /* win */
+ 
+  .tag .side .win {
+	width: 19%;
+	height: 100%;
+	border-left: 2.5px solid rgb(74, 74, 74);
+	border-right: 2.5px solid rgb(66, 66, 66);
+  }
+  
+  .tag .side .win.close,  .tag .side .win.open{
+	width: 20%;
+	height: 100%;
+	position: relative;
+	background-image:linear-gradient(to top,rgb(148, 148, 207),rgba(52, 78, 106, 0.894));
+	background-size:cover;
+  }
+ 
+
+  
+  .tag .side .win.half-open {
+	width: 1222px;
+	background-color:rgb(242, 255, 0);
+	position: relative;
+	animation: lead 5s infinite;
+  }
+  .tag .side .win.half-open::after {
+	content: "";
+	animation: movehalf 5s infinite;
+	width: 100%;
+	position: absolute;
+	background-image: repeating-linear-gradient(rgb(6, 65, 57) 0% 5%,rgb(149, 149, 149) 5% 10%);
+	background-size:cover;
+  }
+  @keyframes lead{
+
+	0%{box-shadow: 1px 15px 12px  8px yellow;}
+	50%{box-shadow: 1px 15px 12px  8px rgba(244, 244, 29, 0.279);}
+	100%{box-shadow: 1px 15px 12px  8px yellow;}
+  }
+
+  @keyframes movehalf{
+
+	0%{height: 50%;}
+	50%{height: 80%; }
+	100%{height: 50%;}
+  }
+  
+/*twoooooooooooooooooooooooooo*/
